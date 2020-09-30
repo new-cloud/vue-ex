@@ -1,18 +1,37 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="div1" @click="add"></div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import jiejie from '@/utils';
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+	data() {
+    return {
+      obj: {
+        d: 0
+      }
+    }
+	},
+	methods: {
+		add() {
+    this.obj.e = 0;
+    console.log('after--', this.obj);
+      console.log(jiejie);
+    }
+	},
+	created() {},
+	mounted() {},
+	watch: {}
+};
 </script>
+
+<style lang="scss" scoped>
+  .div1{
+    width: 150px;
+    height: 150px;
+    background: greenyellow;
+  }
+</style>
