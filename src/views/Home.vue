@@ -1,26 +1,33 @@
 <template>
   <div>
+		<input type="file" @change="handleFile">
     <div class="div1" @click="add"></div>
   </div>
 </template>
 
 <script>
-import jiejie from '@/utils';
 
 export default {
 	data() {
-    return {
-      obj: {
-        d: 0
-      }
-    }
+		return {
+			obj: {
+				d: 0
+			},
+			file: ''
+		};
 	},
 	methods: {
+		handleFile(e) {
+			// console.log(e.target.files[0])
+			this.file = e.target.files[0]
+		},
 		add() {
-    this.obj.e = 0;
-    console.log('after--', this.obj);
-      console.log(jiejie);
-    }
+			let param = new FormData();
+      param.append('file', this.file);
+			this.$api.home.fileUpload(param).then(res => {
+				console.log(res);
+			});
+		}
 	},
 	created() {},
 	mounted() {},

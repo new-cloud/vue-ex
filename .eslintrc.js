@@ -37,7 +37,7 @@ module.exports = {
 		'no-mixed-spaces-and-tabs': [0, 'smart-tabs'], // 不允许混用tab和空格
 		'no-undef': 1, // 不允许未声明的变量
 		'space-before-function-paren': [1, { anonymous: 'always', named: 'never' }], // 函数定义时括号前的空格
-		// "prefer-const": [1,{ "destructuring": "any","ignoreReadBeforeAssign": false}],    //如果一个变量从不重新分配，使用const声明更好。
+		'prefer-const': 1, // 如果一个变量从不重新分配，使用const声明更好。
 		semi: [1, 'always'] // 强制语句分号结尾
 		// "comma-dangle": ["error", "never"], //是否允许对象中出现结尾逗号
 		// "no-cond-assign": 2, //条件语句的条件中不允许出现赋值运算符
