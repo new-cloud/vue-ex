@@ -36,6 +36,7 @@ module.exports = {
 		'no-tabs': 0, // 禁用tab
 		'no-mixed-spaces-and-tabs': [0, 'smart-tabs'], // 不允许混用tab和空格
 		'no-undef': 1, // 不允许未声明的变量
+		'no-unused-expressions': 0, // 不允许无用的表达式
 		'space-before-function-paren': [1, { anonymous: 'always', named: 'never' }], // 函数定义时括号前的空格
 		'prefer-const': 1, // 如果一个变量从不重新分配，使用const声明更好。
 		semi: [1, 'always'] // 强制语句分号结尾
@@ -115,7 +116,6 @@ module.exports = {
 		// "no-self-compare": 2, //不允许自己和自己比较
 		// "no-sequences": 2, //不允许使用逗号表达式
 		// "no-throw-literal": 2, //不允许抛出字面量错误 throw "error"
-		// "no-unused-expressions": 2, //不允许无用的表达式
 		// "no-void": 2, //不允许void操作符
 		// "no-warning-comments": [1, {"terms": ["todo", "fixme", "any other term"]}], //不允许警告备注
 		// "no-with": 2, //不允许使用with语句
