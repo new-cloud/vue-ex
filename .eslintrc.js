@@ -39,6 +39,7 @@ module.exports = {
 		'no-unused-expressions': 0, // 不允许无用的表达式
 		'space-before-function-paren': [1, { anonymous: 'always', named: 'never' }], // 函数定义时括号前的空格
 		'prefer-const': 1, // 如果一个变量从不重新分配，使用const声明更好。
+		"no-trailing-spaces": 1, //一行最后不允许有空格
 		semi: [1, 'always'] // 强制语句分号结尾
 		// "comma-dangle": ["error", "never"], //是否允许对象中出现结尾逗号
 		// "no-cond-assign": 2, //条件语句的条件中不允许出现赋值运算符
@@ -153,7 +154,6 @@ module.exports = {
 		// "no-new-object": 2, //禁止使用new Object()
 		// "fun-call-spacing": 2, //函数调用时，函数名与()之间不能有空格
 		// "no-ternary": 0, //不允许使用三目运算符
-		// "no-trailing-spaces": 2, //一行最后不允许有空格
 		// "no-underscore-dangle": 2, //不允许标识符以下划线开头
 		// "no-extra-parens": 0, //不允许出现多余的括号
 		// "one-var": 0, //强制变量声明放在一起
