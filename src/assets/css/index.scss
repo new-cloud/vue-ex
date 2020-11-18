@@ -3,3 +3,14 @@
 @import './init';
 @import './variable';
 @import './common';
+
+// 页面整体布局
+#app{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .app-content{
+      // min-height: calc(100vh - 200px);
+      flex: 1;
+    }
+  }
