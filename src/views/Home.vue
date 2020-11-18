@@ -19,14 +19,14 @@ export default {
 	methods: {
 		handleFile(e) {
 			// console.log(e.target.files[0])
-			this.file = e.target.files[0]
+			this.file = e.target.files[0];
 		},
 		add() {
-			let param = new FormData();
-      param.append('file', this.file);
-			this.$api.home.fileUpload(param).then(res => {
-				console.log(res);
-			});
+			const param = new FormData();
+			param.append('file', this.file);
+			// this.$api.home.fileUpload(param).then(res => {
+			// 	console.log(res);
+			// });
 		}
 	},
 	created() {},
