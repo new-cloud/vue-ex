@@ -36,8 +36,10 @@ module.exports = {
 		'no-tabs': 0, // 禁用tab
 		'no-mixed-spaces-and-tabs': [0, 'smart-tabs'], // 不允许混用tab和空格
 		'no-undef': 1, // 不允许未声明的变量
+		'no-unused-expressions': 0, // 不允许无用的表达式
 		'space-before-function-paren': [1, { anonymous: 'always', named: 'never' }], // 函数定义时括号前的空格
 		'prefer-const': 1, // 如果一个变量从不重新分配，使用const声明更好。
+		"no-trailing-spaces": 1, //一行最后不允许有空格
 		semi: [1, 'always'] // 强制语句分号结尾
 		// "comma-dangle": ["error", "never"], //是否允许对象中出现结尾逗号
 		// "no-cond-assign": 2, //条件语句的条件中不允许出现赋值运算符
@@ -115,7 +117,6 @@ module.exports = {
 		// "no-self-compare": 2, //不允许自己和自己比较
 		// "no-sequences": 2, //不允许使用逗号表达式
 		// "no-throw-literal": 2, //不允许抛出字面量错误 throw "error"
-		// "no-unused-expressions": 2, //不允许无用的表达式
 		// "no-void": 2, //不允许void操作符
 		// "no-warning-comments": [1, {"terms": ["todo", "fixme", "any other term"]}], //不允许警告备注
 		// "no-with": 2, //不允许使用with语句
@@ -153,7 +154,6 @@ module.exports = {
 		// "no-new-object": 2, //禁止使用new Object()
 		// "fun-call-spacing": 2, //函数调用时，函数名与()之间不能有空格
 		// "no-ternary": 0, //不允许使用三目运算符
-		// "no-trailing-spaces": 2, //一行最后不允许有空格
 		// "no-underscore-dangle": 2, //不允许标识符以下划线开头
 		// "no-extra-parens": 0, //不允许出现多余的括号
 		// "one-var": 0, //强制变量声明放在一起

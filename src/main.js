@@ -4,6 +4,9 @@ import router from './router';
 import store from './store';
 import api from './api';
 
+// 静态资源
+import './assets/css/index.scss';
+
 Vue.config.productionTip = false;
 
 Vue.prototype.$api = api;
