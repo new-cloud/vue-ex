@@ -58,7 +58,7 @@ export default {
 	width: 300px;
 	height: 300px;
 	margin: 0 auto;
-	background: red;
+	background: rgb(255, 0, 43);
 	transition: all .2s;
 }
 </style>
