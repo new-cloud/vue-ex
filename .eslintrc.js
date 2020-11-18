@@ -37,9 +37,10 @@ module.exports = {
 		'no-mixed-spaces-and-tabs': [0, 'smart-tabs'], // 不允许混用tab和空格
 		'no-undef': 1, // 不允许未声明的变量
 		'no-unused-expressions': 0, // 不允许无用的表达式
+		'no-trailing-spaces': 1, // 一行最后不允许有空格
+		'no-unreachable': 1, // 在return，throw，continue，break语句后不允许出现不可能到达的语句
 		'space-before-function-paren': [1, { anonymous: 'always', named: 'never' }], // 函数定义时括号前的空格
 		'prefer-const': 1, // 如果一个变量从不重新分配，使用const声明更好。
-		"no-trailing-spaces": 1, //一行最后不允许有空格
 		semi: [1, 'always'] // 强制语句分号结尾
 		// "comma-dangle": ["error", "never"], //是否允许对象中出现结尾逗号
 		// "no-cond-assign": 2, //条件语句的条件中不允许出现赋值运算符
@@ -65,7 +66,6 @@ module.exports = {
 		// "no-regex-spaces": 2, //正则表达式中不允许出现多个连续空格
 		// "quote-props": 2, //对象中的属性名是否需要用引号引起来
 		// "no-sparse-arrays": 2, //数组中不允许出现空位置
-		// "no-unreachable": 2, //在return，throw，continue，break语句后不允许出现不可能到达的语句
 		// "use-isnan": 2, //要求检查NaN的时候使用isNaN()
 		// "valid-jsdoc": ["error", {
 		//     "requireReturn": false,

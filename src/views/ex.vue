@@ -1,19 +1,14 @@
 <!--  -->
 <template>
-    <div  v-on:mouseover="stop()" v-on:mouseout="move()" class="app">
-        <transition-group tag="ul" name="image">
-            <li v-for="(items,index) in list" v-show="index===num" :key="index" >
-                <img :src="items" alt="">
-                <div>
-                <span
-                v-for="(items,index) in data" :key="index"
-                class="nav"
-                @click="change(index)"
-                :class="{'active':index==num}">{{items}}</span>
-                </div>
-            </li>
-        </transition-group>
-    </div>
+	<div class=''>
+		<div v-show="show">
+			<div class="cover"></div>
+			<div class="modal">
+				<div class="item"></div>
+			</div>
+		</div>
+		<button @click="show=!show">地点弟弟</button>
+	</div>
 </template>
 
 <script>
@@ -22,43 +17,48 @@ export default {
 	components: {},
 	data() {
 		return {
-			data: ['1', '2', '3'],
-			time: '',
-			num: 0,
-			list: [
-				'https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*mb-WQILTlSEAAAAAAAAAAABkARQnAQ',
-				'https://gw.alipayobjects.com/zos/antfincdn/888xda6kBc/Ant%252520Design%252520shouyepeitu.svg',
-				'https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*ZhzDQLMyYlYAAAAAAAAAAABkARQnAQ'
-			]
+			show: false
 		};
 	},
+	computed: {},
+	watch: {},
 	methods: {
-		play() {
-			this.time = setInterval(() => {
-				this.num++;
-				if (this.num === 3) {
-					this.num = 0;
-				}
-			}, 2000);
-		},
-		change(i) {
-			this.num = i;
-		},
-		stop() {
-			clearInterval(this.time);
-		},
-		move() {
-			this.play();
-		}
+
 	},
 	created() {
+
+	},
+	mounted() {
 
 	}
 };
 </script>
 <style lang='scss' scoped>
-li{
-    list-style: none;
+.cover{ 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	z-index: 1;
+    height: 100%;
+    background-color: rgba(0,0,0,.45);
 }
-
+.modal{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	z-index: 1;
+    overflow: auto;
+    outline: 0;
+}
+.item{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	background: red;
+	transition: all .2s;
+}
 </style>
