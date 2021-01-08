@@ -5,7 +5,7 @@ import store from './store';
 import api from './api';
 
 // 静态资源
-import './styles/index.scss';
+// import './styles/global/index.scss';
 
 Vue.config.productionTip = false;
 

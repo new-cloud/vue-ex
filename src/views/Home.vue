@@ -65,7 +65,9 @@ export default {
 			console.log(item);
 		}
 	},
-	created() {},
+	created() {
+		console.log(process.env)
+	},
 	mounted() {
 		// this.obj.age = 10;
 		// console.log(this.obj);
