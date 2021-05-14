@@ -15,45 +15,45 @@
 <script>
 
 export default {
-    props: {
-        visible: {
-            type: Boolean,
-            default: false
-        },
-        // close-on-click-modal    是否可以通过点击 modal 关闭 Dialog
-        closeOnClickModal: {
-            type: Boolean,
-            default: false
-        },
-        width: {
-          type: String,
-          default: '700px'
-        },
-        top: {
-          type: String,
-          default: '15vh'
-        }
-    },
+	props: {
+		visible: {
+			type: Boolean,
+			default: false
+		},
+		// close-on-click-modal    是否可以通过点击 modal 关闭 Dialog
+		closeOnClickModal: {
+			type: Boolean,
+			default: false
+		},
+		width: {
+			type: String,
+			default: '700px'
+		},
+		top: {
+			type: String,
+			default: '15vh'
+		}
+	},
 	data() {
 		return {
 		};
-    },
-    computed: {
-        style() {
-            let style = {};
-            style.marginTop = this.top;
-            style.width = this.width;
-            return style;
-        }
-    },
+	},
+	computed: {
+		style() {
+			const style = {};
+			style.marginTop = this.top;
+			style.width = this.width;
+			return style;
+		}
+	},
 	methods: {
-        hide() {
-            this.$emit('update:visible', false);
-        },
-        handleWrapperClick() {
-            if (!this.closeOnClickModal) return;
-            this.hide();
-        }
+		hide() {
+			this.$emit('update:visible', false);
+		},
+		handleWrapperClick() {
+			if (!this.closeOnClickModal) return;
+			this.hide();
+		}
 	},
 	created() {
 
@@ -101,7 +101,7 @@ export default {
     left: 0;
     background-color: rgba(0,0,0,.6);
     overflow: auto;
-    .modal{ 
+    .modal{
         // position: fixed;
         // top: 0;
         // right: 0;

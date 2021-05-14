@@ -41,6 +41,7 @@ module.exports = {
 		'no-unreachable': 1, // 在return，throw，continue，break语句后不允许出现不可能到达的语句
 		'space-before-function-paren': [1, { anonymous: 'always', named: 'never' }], // 函数定义时括号前的空格
 		'prefer-const': 1, // 如果一个变量从不重新分配，使用const声明更好。
+		"quotes": 0, //引号风格
 		semi: [1, 'always'] // 强制语句分号结尾
 		// "comma-dangle": ["error", "never"], //是否允许对象中出现结尾逗号
 		// "no-cond-assign": 2, //条件语句的条件中不允许出现赋值运算符
@@ -160,7 +161,6 @@ module.exports = {
 		// "operator-assignment": 0, //赋值运算符的风格
 		// "padded-blocks": [2, "never"], //块内行首行尾是否空行
 		// "quote-props": 0, //对象字面量中属性名加引号
-		// "quotes": [1, "single", "avoid-escape"], //引号风格
 		// "semi-spacing": [2, {"before": false, "after": true}], //分后前后空格
 		// "sort-vars": 0, //变量声明时排序
 		// "space-before-blocks": [2, "always"], //块前的空格
