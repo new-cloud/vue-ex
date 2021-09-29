@@ -41,7 +41,7 @@ module.exports = {
 		'no-unreachable': 1, // 在return，throw，continue，break语句后不允许出现不可能到达的语句
 		'space-before-function-paren': [1, { anonymous: 'always', named: 'never' }], // 函数定义时括号前的空格
 		'prefer-const': 1, // 如果一个变量从不重新分配，使用const声明更好。
-		"quotes": 0, //引号风格
+		quotes: 0, // 引号风格
 		semi: [1, 'always'] // 强制语句分号结尾
 		// "comma-dangle": ["error", "never"], //是否允许对象中出现结尾逗号
 		// "no-cond-assign": 2, //条件语句的条件中不允许出现赋值运算符

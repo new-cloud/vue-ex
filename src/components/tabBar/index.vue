@@ -17,37 +17,37 @@
 
 <script>
 export default {
-    props: {
-        title: {
-            type: String,
-            default: ''
-        },
-        leftArrow: {
-            type: Boolean,
-            default: true
-        },
-        border: {
-            type: Boolean,
-            default: false
-        }
-    },
-    data() {
-        return {
-            active: '/Home'
-        }
-    },
-    watch: {
-        $route: {
-          handler(val) {
-            this.active = val.path
-          },
-          deep: true
-        }
-    },
-    created() {
-        this.active = this.$route.path
-    }
-}
+	props: {
+		title: {
+			type: String,
+			default: ''
+		},
+		leftArrow: {
+			type: Boolean,
+			default: true
+		},
+		border: {
+			type: Boolean,
+			default: false
+		}
+	},
+	data() {
+		return {
+			active: '/Home'
+		};
+	},
+	watch: {
+		$route: {
+			handler(val) {
+				this.active = val.path;
+			},
+			deep: true
+		}
+	},
+	created() {
+		this.active = this.$route.path;
+	}
+};
 </script>
 
 <style lang='scss' scoped>

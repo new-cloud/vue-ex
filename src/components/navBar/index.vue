@@ -19,63 +19,63 @@
 
 <script>
 export default {
-    props: {
-        title: {
-            type: String,
-            default: ''
-        },
-        isTitle: {
-            type: Boolean,
-            default: true
-        },
-        leftArrow: {
-            type: Boolean,
-            default: true
-        },
-        rightText: {
-            type: String,
-            default: ''
-        },
-        rightTextKye: {
-            type: String,
-            default: ''
-        },
-        border: {
-            type: Boolean,
-            default: true
-        },
-        position: {
-            type: String,
-            default: ''
-        },
-        background: {
-            type: String,
-            default: ''
-        }
-    },
-    computed: {
-        style() {
-            return {
-                width: '100%',
-                position: this.position,
-                background: this.background
-            }
-        }
-    },
-    methods: {
-        onClickLeft() {
-            if (this.$route.meta.navBar.backPath) {
-                this.$router.push(this.$route.meta.navBar.backPath)
-            } else {
-                this.$router.go(-1)
-            }
-        },
-        onClickRight() {
-            console.log(this.rightTextKye)
-            this.$router.push(this.rightTextKye)
-        }
-    }
-}
+	props: {
+		title: {
+			type: String,
+			default: ''
+		},
+		isTitle: {
+			type: Boolean,
+			default: true
+		},
+		leftArrow: {
+			type: Boolean,
+			default: true
+		},
+		rightText: {
+			type: String,
+			default: ''
+		},
+		rightTextKye: {
+			type: String,
+			default: ''
+		},
+		border: {
+			type: Boolean,
+			default: true
+		},
+		position: {
+			type: String,
+			default: ''
+		},
+		background: {
+			type: String,
+			default: ''
+		}
+	},
+	computed: {
+		style() {
+			return {
+				width: '100%',
+				position: this.position,
+				background: this.background
+			};
+		}
+	},
+	methods: {
+		onClickLeft() {
+			if (this.$route.meta.navBar.backPath) {
+				this.$router.push(this.$route.meta.navBar.backPath);
+			} else {
+				this.$router.go(-1);
+			}
+		},
+		onClickRight() {
+			console.log(this.rightTextKye);
+			this.$router.push(this.rightTextKye);
+		}
+	}
+};
 </script>
 
 <style lang='scss' scoped>

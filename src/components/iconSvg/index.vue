@@ -26,13 +26,13 @@ export default {
 	},
 	computed: {
 		style() {
-			const w = this.width && this.width / 16
-			const h = this.height && this.height / 16
-			const s = this.size && this.size / 16
+			const w = this.width && this.width / 16;
+			const h = this.height && this.height / 16;
+			const s = this.size && this.size / 16;
 			return {
 				width: (w || s) + 'rem',
 				height: (h || s) + 'rem'
-			}
+			};
 		}
 	}
 };
